@@ -1,0 +1,269 @@
+nav {
+    display: flex;
+    justify-content: flex-end;
+    border-bottom: 5px dotted #2618b1;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 20px;
+    color: royalblue;
+    margin: 30px;
+    padding: 10px;
+}
+
+.active {
+    border: 3px solid royalblue;
+    box-shadow: 2px 2px 5px 0 slateblue;
+}
+
+h1 {
+    text-align: center;
+    font-size: 60px;
+    font-weight: normal;
+    padding-bottom: 15px;
+    width: 1100px;
+    margin: 30px auto;
+    letter-spacing: 15px;
+    text-shadow: -4px 2px navy, -8px 4px slateblue, -12px 6px turquoise;
+}
+
+.info {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.post {
+    background-image: linear-gradient(to right, #FFC740, white, #FFD673);
+    padding: 15px 45px 30px 45px;
+    width: 400px;
+    margin: 20px;
+    position: relative;
+    border-radius: 15px;
+    box-shadow: 3px 5px 0px 0px orange;
+}
+
+.post:hover {
+    color: red;
+}
+
+.post h3 {
+    text-align: center;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 30px;
+    text-align: center;
+}
+
+.flex-item-left {
+    background-color: #f1f1f1;
+    padding: 10px;
+    flex: 50%;
+}
+
+.flex-item-right {
+    background-color: dodgerblue;
+    padding: 10px;
+    flex: 50%;
+}
+
+.hobbies {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.hobby:hover {
+    box-shadow: 3px 5px 10px 0px gold;
+}
+
+.hobby {
+    flex: 1 1 300px;
+    /* Adjust this value according to your needs */
+    margin: 10px;
+    background-color: #f0f0f0;
+    /* Background color */
+    border-radius: 10px;
+    /* Rounded corners */
+    padding: 20px;
+    /* Padding inside the box */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Box shadow for depth */
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.hobby p {
+    font-size: 16px;
+    /* Change font size */
+    color: #333;
+    /* Change text color */
+    line-height: 1.5;
+    /* Adjust line height for readability */
+    text-align: justify;
+    /* Justify text */
+}
+
+.hobby p:first-letter {
+    font-size: 150%;
+    /* Increase first letter size */
+    color: #ff6600;
+    /* Change color of first letter */
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    /* Set the height as needed */
+    background-color: #f0f0f0;
+    /* Optional: Adding a background color for better visualization */
+}
+
+.social {
+    margin: 0 10px;
+    /* Optional: Add some spacing between the images */
+}
+
+/* Button styles */
+.project {
+    display: inline-block;
+    padding: 10px 20px;
+    background-image: linear-gradient(to right, lightgreen, white, gold);
+    /* Button background color */
+    /* Button text color */
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+/* Button hover animation */
+.project:hover {
+    background-color: #0056b3;
+    /* Change background color on hover */
+    transform: translateY(-2px);
+    animation: bounce 0.8s ease infinite;
+    /* Move button slightly upwards on hover */
+    transition: 3s linear;
+    border: 2px dotted green;
+}
+
+.page {
+    width: 80px;
+    height: 80px;
+    position: relative;
+}
+
+.posts {
+    display: flex;
+    justify-content: space-around;
+}
+
+.projects {
+    font-size: 20px;
+    padding: 20px;
+    width: 800px;
+    margin: 20px;
+    border: 1px solid navy;
+    border-radius: 15px;
+    text-align: center;
+}
+
+/* Define the keyframes for the bounce animation */
+@keyframes bounce {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+        /* Start and end at normal position */
+    }
+
+    40% {
+        transform: translateY(-20px);
+        /* Move upwards at 40% of the animation */
+    }
+
+    60% {
+        transform: translateY(-10px);
+        /* Move upwards at 60% of the animation */
+    }
+}
+
+.projects:hover {
+    box-shadow: 0 5px 5px 5px navy;
+}
+
+/* Apply the bounce animation to the image when hovered */
+.gallery:hover {
+    animation: bounce 0.8s ease infinite;
+    /* Apply the bounce animation */
+    opacity: 1;
+    border: 6px solid navy;
+    padding: 5px;
+    transition: opacity 0.5s ease-out, border 0.5s ease-out, width 0.5s ease-out, height 0.5s ease-out, padding 0.5s ease-out;
+}
+
+.gallery {
+    opacity: 0.2;
+}
+
+.tools {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* Two columns with equal width */
+    grid-gap: 20px;
+    /* Gap between grid items */
+}
+
+/* Style for the tip list item */
+.tip {
+    padding: 25px;
+    display: flex;
+    /* Use flexbox to align items */
+    align-items: center;
+    /* Vertically align items */
+    transition: transform 0.3s;
+    /* Add a transition effect for smooth scaling */
+}
+
+/* Style for the image within the tip */
+.tip img {
+    width: 30px;
+    /* Set initial width */
+    height: auto;
+    /* Maintain aspect ratio */
+    margin-right: 10px;
+    /* Add some space between image and text */
+}
+
+/* Increase the size of the image when hovering over the text */
+.tip:hover img {
+    transform: scale(3);
+    transition: 6s linear;
+}
+
+.tip:hover {
+    background-color: #2adede;
+    color: white;
+    font-size: 25px;
+    transition: background-color 1s ease-in, color 1s ease-in, font-size 1s ease-in;
+}
+
+.tip h3 {
+    padding-right: 25px;
+}
